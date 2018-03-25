@@ -2,6 +2,9 @@
     
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <%@ page isELIgnored="false" %> 
+
+<link type="text/css" href="<%=request.getContextPath()%>/resources/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<script src="<%=request.getContextPath()%>/resources/bootstrap/js/bootstrap.js"></script>
  
  
 <div class="menu-container">
