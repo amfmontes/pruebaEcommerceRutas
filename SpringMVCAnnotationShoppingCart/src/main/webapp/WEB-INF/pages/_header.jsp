@@ -5,11 +5,11 @@
  
 <div class="header-container">
  
-    <div class="site-name">Online Shop</div>
+    <div class="site-name">WebTours</div>
  
     <div class="header-bar">
         <c:if test="${pageContext.request.userPrincipal.name != null}">
-        Hello
+        Bienvenido
            <a href="${pageContext.request.contextPath}/accountInfo">
                 ${pageContext.request.userPrincipal.name} </a>
          &nbsp;|&nbsp;

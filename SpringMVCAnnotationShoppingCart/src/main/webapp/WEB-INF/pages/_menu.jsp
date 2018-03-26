@@ -9,7 +9,7 @@
  
 <div class="menu-container">
   
-   <a href="${pageContext.request.contextPath}/">Home</a>
+   <a href="${pageContext.request.contextPath}/">Inicio</a>
    |
    <a href="${pageContext.request.contextPath}/productList">
       Rutas disponibles

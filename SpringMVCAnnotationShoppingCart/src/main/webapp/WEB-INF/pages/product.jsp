@@ -24,7 +24,7 @@
    <form:form modelAttribute="productForm" method="POST" enctype="multipart/form-data">
        <table style="text-align:left;">
 			<tr>
-			<td>Code *</td>
+			<td>Codigo *</td>
 			<td style="color:red;">
                   <c:if test="${not empty productForm.code}">
                        <form:hidden path="code"/>
@@ -38,24 +38,39 @@
 				<td><form:errors path="code" class="error-message" /></td>
 				</tr>
 				<tr>
-				<td>Name *</td>
+				<td>Nombre *</td>
 				<td><form:input path="name" /></td>
 				<td><form:errors path="name" class="error-message" /></td>
 				</tr>
 				<tr>
-				<td>Price *</td>
+				<td>Descripcion</td>
+				<td><form:input path="descripcion" /></td>
+				<td><form:errors path="descripcion" class="error-message" /></td>
+				</tr>
+				<tr>
+				<td>Fecha inicio *</td>
+				<td><form:input path="fechaInicio" /></td>
+				<td><form:errors path="fechaInicio" class="error-message" /></td>
+				</tr>
+				<tr>
+				<td>Fecha final *</td>
+				<td><form:input path="fechaFinal" /></td>
+				<td><form:errors path="fechaFinal" class="error-message" /></td>
+				</tr>
+				<tr>
+				<td>Precio *</td>
 				<td><form:input path="price" /></td>
 				<td><form:errors path="price" class="error-message" /></td>
 				</tr>
 				<tr>
-				<td>Image</td>
+				<td>Imagen</td>
 				<td>
                <img src="${pageContext.request.contextPath}/productImage?code=${productForm.code}" width="100"/></td>
 				<td>
 				</td>
 				</tr>
 				<tr>
-				<td>Upload Image</td>
+				<td>Adjuntar Imagen</td>
 				<td><form:input type="file" path="fileData"/></td>
 				<td> </td>
 				</tr>
