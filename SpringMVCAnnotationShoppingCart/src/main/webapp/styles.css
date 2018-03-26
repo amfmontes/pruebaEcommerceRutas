@@ -62,14 +62,14 @@ body {
 }
  
 .container  {
-    margin: 5px 0px;
+    margin: 5% 0%;
 }
  
 .demo-container, .login-container, .account-container {
     padding: 5px;
     border: 1px solid #ccc;
     text-align:left;
-    margin:20px 0px;
+    margin:2% 0%;
 }
  
 .customer-info-container {
@@ -79,9 +79,9 @@ body {
 }
 .product-preview-container {
     border: 1px solid #ccc;
-    padding: 5px;
-    width: 250px;
-    margin: 10px ;
+    padding: 0%;
+    width: 100%;
+    margin: 1% ;
     display: inline-block;
     text-align:left;
 }
@@ -92,14 +92,14 @@ body {
  
  
 .product-image {
-    width: 120px;
-    height: 80px;
+    width: 20%;
+    height: 20%;
 }
  
 ul {
     list-style-type: none;
-    padding-left: 5px;
-    margin:5px;
+    padding-left: 0.5%;
+    margin:1%;
 }
  
  
