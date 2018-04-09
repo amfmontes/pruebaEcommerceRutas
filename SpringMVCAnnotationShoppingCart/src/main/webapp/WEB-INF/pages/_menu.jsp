@@ -28,7 +28,7 @@
    
    <security:authorize access="hasRole('ROLE_MANAGER')">
          <a href="${pageContext.request.contextPath}/product">
-                        Create Product
+                        Crear Ruta
          </a>
          |
    </security:authorize>

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Product</title>
+<title>Ruta</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
    <jsp:include page="_header.jsp" />
    <jsp:include page="_menu.jsp" />
  
-   <div class="page-title">Product</div>
+   <div class="page-title">Ruta</div>
   
    <c:if test="${not empty errorMessage }">
      <div class="error-message">
@@ -43,23 +43,23 @@
 				<td><form:errors path="name" class="error-message" /></td>
 				</tr>
 				<tr>
-				<td>Descripcion</td>
+				<td>Descripcion *</td>
 				<td><form:input path="descripcion" /></td>
 				<td><form:errors path="descripcion" class="error-message" /></td>
 				</tr>
 				<tr>
 				<td>Fecha inicio *</td>
-				<td><form:input path="fechaInicio" /></td>
+				<td><form:input type="date" path="fechaInicio" /></td>
 				<td><form:errors path="fechaInicio" class="error-message" /></td>
 				</tr>
 				<tr>
 				<td>Fecha final *</td>
-				<td><form:input path="fechaFinal" /></td>
+				<td><form:input type="date" path="fechaFinal" /></td>
 				<td><form:errors path="fechaFinal" class="error-message" /></td>
 				</tr>
 				<tr>
 				<td>Precio *</td>
-				<td><form:input path="price" /></td>
+				<td><form:input  path="price" /></td>
 				<td><form:errors path="price" class="error-message" /></td>
 				</tr>
 				<tr>
@@ -76,7 +76,7 @@
 				</tr>
 				<tr>
 				<td>&nbsp;</td>
-				<td><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></td>
+				<td><input type="submit" value="Guardar" /> <input type="reset" value="Borrar" /></td>
 				</tr>
 				</table>
    </form:form>

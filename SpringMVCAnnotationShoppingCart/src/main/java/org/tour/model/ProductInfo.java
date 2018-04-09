@@ -1,5 +1,9 @@
 package org.tour.model;
  
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.tour.entity.Product;
  
@@ -11,8 +15,10 @@ public class ProductInfo {
     private String fechaInicio;
     private String fechaFinal;
     
- 
-    private boolean newProduct=false;
+    SimpleDateFormat formato= new SimpleDateFormat("dd/MM/yyyy");
+	
+    		 
+		 private boolean newProduct=false;
  
     // Upload file.
     private CommonsMultipartFile fileData;
